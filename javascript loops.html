@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title> How many fingers</title>
+        
+   
+</head>
+
+<body>
+       
+
+    <div id="tweetDiv"></div>
+        
+    <script type="text/javascript">
+
+        var  tweetString = "";
+
+        var tweets = ["Hi everyone", "I love cornflakes!", " Night night!", "Sweet dreams!"]
+
+        var i = 0;
+
+        while (i < tweets.length) {
+
+
+            tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+            
+            i++;
+        }
+       
+        for (var i = 0; i < tweets.length; i++) {
+
+        tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+       }
+
+       document.getElementById("tweetDiv").innerHTML = tweetString;
+
+
+
+        
+    
+    
+    </script>
+    
+    
+    
+
+
+
+
+</body>
+</html>
