@@ -1,0 +1,105 @@
+
+<html>
+<head>
+
+    <title> jQuery UI</title>
+
+    <script type="text/javascript" src="Jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        #dragable {
+
+            width: 90px; 
+            height: 90px;
+            padding: 0.5em;
+            float: center;
+            margin: 0 10px 10px 0; 
+        }
+
+        #square {
+
+            width: 100px; 
+            height: 100px;
+            margin: 20px;
+            background-color: aqua;
+            float: left;
+
+        }
+        #square1 {
+
+            width: 400px; 
+            height: 400px;
+            margin: 20px;
+            background-color: rgb(2, 5, 5);
+            float: left;
+            
+
+        }
+        p {
+            color: white;
+        }
+
+
+
+
+    
+    </style>
+ 
+
+</head>
+<body>
+
+    <div id="draggable">
+        <p> Drag me horizontaly!</p>
+    </div>
+
+    <div id="square"> <p>Drag me </p></div>
+    <div id="square1"><p> Drop me here!</p></div>
+
+    
+
+    <script type="text/javascript">
+
+    $(function() {
+
+        $("#square").draggable();
+        $("#square1").droppable({
+            drop:function (event, UI) {
+                $(this)
+                    .addClass ("ui-state-highlight")
+                    .find("p")
+                    .html("dropped!")
+            }
+        });
+
+    });
+    
+
+       
+
+    
+
+
+    
+
+
+
+
+
+
+    
+    </script>
+
+    
+
+    
+
+
+</body>
+
+</html>

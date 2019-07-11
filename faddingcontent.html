@@ -1,0 +1,102 @@
+
+<html>
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <title> Jquery</title>
+
+     <style type="text/css">
+
+      
+     
+
+     #circle {
+
+         height: 200px;
+         width: 200px;
+         background-color: green;
+         border-radius: 50%;
+         margin: 10px;
+         
+     }
+
+     .square {
+
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        margin: 10px;
+
+    }
+    #hidden {
+
+        display: none;
+    }
+
+      
+    </style>
+
+</head>
+<body>
+
+    
+
+
+   <p> This is some example test.</p>
+
+   <button id="bottom" type="button"> fade out text</button>
+    
+   <p id="hidden"> This text is hidden</p>
+
+   <button id="fadeIn"> Fade in text</button>
+
+   <p id="toggletext"> This text is example of toggle</p>
+
+   <button id="toggle"> Click here to mix it up</button>
+
+     <script type="text/javascript">
+
+        $("#bottom").click(function(){
+
+            $("p").fadeOut();
+
+        });
+
+        $("#fadeIn").click(function(){
+
+            $("#hidden").fadeIn();
+        });
+
+        $ ("#toggle").click( function(){
+
+            if ($("#toggletext").css("display") == "none"){
+
+                $("#toggletext").fadeIn();
+
+            } else {
+
+                $("#toggletext").fadeOut();
+
+            }
+
+           
+
+
+        });
+
+           
+           
+          
+
+     
+      
+    
+    
+    </script>
+
+    
+
+
+</body>
+
+</html>
